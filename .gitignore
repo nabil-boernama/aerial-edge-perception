@@ -1,0 +1,5 @@
+venv/
+build/
+onnxruntime/
+output_detection.jpg
+__pycache__/

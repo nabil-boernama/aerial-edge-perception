@@ -195,7 +195,6 @@ std::vector<Detection> OnnxRuntimeEngine::runInference(const std::vector<float>&
     cv::dnn::NMSBoxes(boxes, confidences, CONFIDENCE_THRESHOLD, NMS_THRESHOLD, nms_indices);
 
     // Build the final clean list of detections to return
-    std::vector<Detection> detections;
     for (int idx : nms_indices) 
     {
         Detection det;
